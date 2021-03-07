@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .txt-center{
+            text-align: center;
+        }
+        a{
+         text-decoration: none;   
+        }
         *{
-            margin: 0;
-            padding: 0;
+            margin: 1px;
+            padding: 5px;       
+            
         }
         body{
-          border: 5px solid black;  
+          border: 3px solid black;  
+          border-right: 5px solid black;
         }
         .logos img{
-           width: 50px;
+           width: 60px;
         }
         .titles{
+            font-family:initial;
            text-align: center;
         }
         .bar{
@@ -49,25 +58,42 @@
             margin-top: 1px;
             margin-bottom: 1px;
         }
-        hr{
-            top: 10px;
-        }
+      
         table{
             table-layout: fixed;
-            width: 100%;
+            width: 30%;
             border-collapse: collapse;
-            border: 3px solid black;
+            border: 1px solid black;
         }
      th,td{
-        width: 25%;
+        width: 10%;
         text-align: left;
         vertical-align: top;
-         /*border: 1px solid black;*/
-         padding: 20px;
+         border: 1px solid black;
+         padding: 10px;
           border-spacing: 0px;
           border-collapse: collapse;
            
         }
+        .linea{
+            border: 1px;
+            
+            border-bottom: 1px solid black;
+        }
+        .Boton{
+            background-color: teal;
+            width: 205px;
+            color: white;
+            border-radius: 10px;
+           
+        }
+        .negritas{
+            font-weight: bold;
+        }
+      
+       
+      
+           
     </style>
 </head>
 
@@ -83,7 +109,6 @@
     </div>
     <br>
     <div><h4>Ejemplo de Texto</h4></div>
-    <br>
     <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Doloremque animi vero omnis est voluptate perferendis ut, consectetur eligendi ad quis deserunt pariatur ducimus alias distinctio.
         Blanditiis quos illo accusamus provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laboriosam consequuntur expedita 
@@ -92,9 +117,9 @@
         possimus. Exercitationem tenetur explicabo facilis sed obcaecati nobis nesciunt, suscipit ratione!</p>
     </div>
     <br>
-    <div><hr></div>
-    <div><h3>Ejemplo de Tablas</h3></div>
-    <br>
+    <div class="linea"></div>
+    <div><h4>Ejemplo de Tablas</h4></div>
+
     <div>   <table>
         <tr>
             <th>Frameworks</th>
@@ -103,22 +128,26 @@
             
         </tr>
         <tr>
-            <th>Bootstrap</th>
-            <th>X</th>
-            <th> </th>
+            <td class="negritas">Bootstrap</td>
+            <td>X</td>
+            <td> </td>
            
         </tr>
         <tr>
-            <th>jQuery</th>
-            <th>X</th>
-            <th> </th>
+            <td class="negritas">jQuery</td>
+            <td>X</td>
+            <td> </td>
            
         </tr>
         <tr>
-            <th>NodeJs</th>
+            <td class="negritas">NodeJs</td>
             
-            <th>X</th>
+            <td colspan="2" class="txt-center">X</td> 
         </tr>
     </table></div>
+    <br>
+    <h3>Ejemplo de Links</h3>
+    <a class="ds" href=""><div class="Boton">Click aqui para cambiar imagen </div></a>
+   
 </body>
 </html>
