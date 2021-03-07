@@ -29,6 +29,9 @@
            text-align: center;
         }
         .bar{
+          position: fixed;
+          width: 95%;
+         /* word-wrap: break-word;*/
             display: flex ;
             background-color: teal;
             color:white;
@@ -53,7 +56,7 @@
         .bar ul li{
             margin-left: 5px;
             margin-right: 3px;
-            padding: 2px;
+            padding: 1px;
             border: 1px solid white;
             margin-top: 1px;
             margin-bottom: 1px;
@@ -85,7 +88,7 @@
             width: 205px;
             color: white;
             border-radius: 10px;
-           
+            cursor:pointer;
         }
         .negritas{
             font-weight: bold;
@@ -147,7 +150,11 @@
     </table></div>
     <br>
     <h3>Ejemplo de Links</h3>
-    <a class="ds" href=""><div class="Boton">Click aqui para cambiar imagen </div></a>
-   
+    <a class="ds" onclick="cimage()"><div class="Boton" >Click aqui para cambiar imagen </div></a>
+    <div id="img1" style="display:contents;"><img src="uaslp ed.jpg" alt=""></div>
+    <div id="img2" style="display: none;"><img src="uaslp.png" alt=""></div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
